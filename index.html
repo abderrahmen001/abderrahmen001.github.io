@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Abderrahmen Ben Omrane — Cybersecurity Specialist & Embedded Systems Engineer. Red Team, Blue Team, IoT Security, AI."/>
+  <title>Abderrahmen Ben Omrane · Cybersecurity & Embedded Systems</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <!-- custom flaticon icons used instead of fontawesome -->
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<!-- ═══════ NAV ═══════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">ABO<span>.</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#about"       data-i18n="nav_about">About</a></li>
+    <li><a href="#skills"      data-i18n="nav_skills">Skills</a></li>
+    <li><a href="#experience"  data-i18n="nav_exp">Experience</a></li>
+    <li><a href="#education"   data-i18n="nav_edu">Education</a></li>
+    <li><a href="#projects"    data-i18n="nav_projects">Projects</a></li>
+    <li><a href="#certs"       data-i18n="nav_certs">Certs</a></li>
+    <li><a href="#blog"        data-i18n="nav_blog">Blog</a></li>
+    <li><a href="#contact"     data-i18n="nav_contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="lang-sw">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <button class="icon-btn" id="themeToggle" title="Toggle theme">
+      <span id="themeIcon">🌙</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"      data-i18n="nav_about">About</a>
+  <a href="#skills"     data-i18n="nav_skills">Skills</a>
+  <a href="#experience" data-i18n="nav_exp">Experience</a>
+  <a href="#education"  data-i18n="nav_edu">Education</a>
+  <a href="#projects"   data-i18n="nav_projects">Projects</a>
+  <a href="#certs"      data-i18n="nav_certs">Certs</a>
+  <a href="#blog"       data-i18n="nav_blog">Blog</a>
+  <a href="#contact"    data-i18n="nav_contact">Contact</a>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div>
+      <h1 class="hero-name reveal reveal-delay-1">
+        <span data-i18n="hero_name_1">Abderrahmen</span><br/>
+        <em data-i18n="hero_name_2">Ben Omrane</em>
+      </h1>
+      <p class="hero-intro reveal reveal-delay-1" data-i18n="welcome_paragraph">By scrolling down, you will get to know me better and discover more about my professional experience, educational background, associative involvement, as well as my interests and projects.</p>
+      <div class="hero-cta reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_contact">Get in touch →</a>
+        <a href="assets/pdfs/cv.pdf" class="btn btn-ghost" download data-i18n="hero_btn_cv">Download CV ↓</a>
+        <a href="#projects" class="btn btn-outline" data-i18n="hero_btn_projects">View Projects</a>
+      </div>
+    </div>
+
+    <!-- Hero card -->
+    <div class="hero-card reveal reveal-delay-2">
+      <div class="card-glow"></div>
+      <div class="hero-avatar">
+      <img src="assets/img/photo.png"/>
+      </div>
+      <div class="hero-card-name">Abderrahmen Ben Omrane</div>
+      <div class="hero-card-role" data-i18n="hero_card_role">Technical Consultant @ Naxxum Africa</div>
+      <div class="hero-card-links">
+        <a href="mailto:benomrane.abderrahmen@gmail.com" title="Email">
+          <img src="flaticon/mail.svg" alt="Email"/>
+        </a>
+        <a href="https://linkedin.com/in/abderrahmen-ben-omrane" target="_blank" title="LinkedIn">
+          <img src="flaticon/linkedin.png" alt="LinkedIn"/>
+        </a>
+        <a href="https://github.com/YOUR_HANDLE" target="_blank" title="GitHub">
+          <img src="flaticon/github.svg" alt="GitHub"/>
+        </a>
+      </div>
+      <div class="hero-card-divider"></div>
+      <div class="hero-card-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">2+</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_exp">Years XP</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">5+</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_certs">Certs</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">4+</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_proj">Projects</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">4</div>
+          <div class="hero-stat-label" data-i18n="hero_stat_lang">Languages</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="about_eyebrow">Who I am</div>
+    <h2 class="section-title reveal" data-i18n="about_title">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div>
+        <p class="reveal" data-i18n="about_p1">I'm a 25-year-old cybersecurity specialist with a unique dual background in Electronics & Embedded Systems (BSc) and Information Systems Security (MSc).</p>
+        <p class="reveal reveal-delay-1" data-i18n="about_p2">My professional journey spans SOC operations, penetration testing, threat intelligence, and IoT security hardening.</p>
+        <p class="reveal reveal-delay-2" data-i18n="about_p3">Beyond pure security, I'm passionate about AI/ML applications in cybersecurity, malware analysis, and the rapidly evolving field of embedded systems security.</p>
+
+        <div class="about-flags reveal reveal-delay-3">
+          <div class="flag-row">
+            <span class="flag">🇹🇳</span>
+            <span class="flag-lang">Arabic</span>
+            <div class="flag-bar"><div class="flag-bar-fill" style="width:100%"></div></div>
+            <span class="flag-level">C2</span>
+          </div>
+          <div class="flag-row">
+            <span class="flag">🇫🇷</span>
+            <span class="flag-lang">French</span>
+            <div class="flag-bar"><div class="flag-bar-fill" style="width:80%"></div></div>
+            <span class="flag-level">B2</span>
+          </div>
+          <div class="flag-row">
+            <span class="flag">🇬🇧</span>
+            <span class="flag-lang">English</span>
+            <div class="flag-bar"><div class="flag-bar-fill" style="width:60%"></div></div>
+            <span class="flag-level">B1</span>
+          </div>
+          <div class="flag-row">
+            <span class="flag">🇩🇪</span>
+            <span class="flag-lang">German</span>
+            <div class="flag-bar"><div class="flag-bar-fill" style="width:30%"></div></div>
+            <span class="flag-level">A2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-meta">
+        <div class="meta-card reveal reveal-delay-1">
+          <div class="meta-row">
+            <span class="meta-key" data-i18n="info_loc">Location</span>
+            <span class="meta-val">Tunis, Tunisia</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key" data-i18n="info_email">Email</span>
+            <span class="meta-val">
+              <a href="mailto:benomrane.abderrahmen@gmail.com">benomrane.abderrahmen@gmail.com</a>
+            </span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">LinkedIn</span>
+            <span class="meta-val">
+              <a href="https://linkedin.com/in/abderrahmen-ben-omrane" target="_blank">/abderrahmen-ben-omrane</a>
+            </span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key">GitHub</span>
+            <span class="meta-val">
+              <a href="https://github.com/abderrahmen001" target="_blank">github.com/abderrahmen001</a>
+            </span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-key" data-i18n="info_avail">Availability</span>
+            <span class="meta-val status-dot">● <span data-i18n="info_avail_val">Open to opportunities</span></span>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ SKILLS ═══════ -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="skills_eyebrow">What I work with</div>
+    <h2 class="section-title reveal" data-i18n="skills_title">Technical <span>Skills</span></h2>
+
+    <div class="skills-tabs reveal">
+      <button class="skills-tab active" data-tab="all"      data-i18n="tab_all">All</button>
+      <button class="skills-tab"        data-tab="cyber"    data-i18n="tab_cyber">Cybersecurity</button>
+      <button class="skills-tab"        data-tab="embedded" data-i18n="tab_embedded">Embedded</button>
+      <button class="skills-tab"        data-tab="ai"       data-i18n="tab_ai">AI</button>
+    </div>
+
+    <!-- ALL -->
+    <div class="skills-panel active" data-tab="all">
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">🔴</div>
+          <div class="skill-group-title">Red Team / Offensive</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">Penetration Testing</span>
+            <span class="skill-pill">CRTP (in progress)</span>
+            <span class="skill-pill">Active Directory</span>
+            <span class="skill-pill">OWASP</span>
+            <span class="skill-pill">Vulnerability Assessment</span>
+            <span class="skill-pill">SAST / DAST</span>
+            <span class="skill-pill">Threat Modeling</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-icon">🔵</div>
+          <div class="skill-group-title">Blue Team / Defensive</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">SIEM (Wazuh, Elastic)</span>
+            <span class="skill-pill">Incident Response</span>
+            <span class="skill-pill">Threat Intelligence</span>
+            <span class="skill-pill">SOAR (Shuffle)</span>
+            <span class="skill-pill">SOC L2/L3</span>
+            <span class="skill-pill">Security Onion</span>
+            <span class="skill-pill">pfSense</span>
+            <span class="skill-pill">Fortinet</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-icon">🟡</div>
+          <div class="skill-group-title">Audit & Compliance</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">ISO/IEC 27001</span>
+            <span class="skill-pill">Network Security</span>
+            <span class="skill-pill">Secure Architecture</span>
+            <span class="skill-pill">Cryptography</span>
+            <span class="skill-pill">Risk Assessment</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-icon">🔌</div>
+          <div class="skill-group-title">IoT & Embedded Systems</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">ATmega328P</span>
+            <span class="skill-pill">Raspberry Pi</span>
+            <span class="skill-pill">MQTT / TLS</span>
+            <span class="skill-pill">UART / GSM / XBee</span>
+            <span class="skill-pill">C / C++</span>
+            <span class="skill-pill">Atmel Studio</span>
+            <span class="skill-pill">IoT Security</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-icon">💻</div>
+          <div class="skill-group-title">Development & DevOps</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">JavaScript / Node.js</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">SQL / PostgreSQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">Ansible</span>
+            <span class="skill-pill">VMware</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-icon">🤖</div>
+          <div class="skill-group-title">AI & Machine Learning</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">ML Specialization</span>
+            <span class="skill-pill">AI in Cybersecurity</span>
+            <span class="skill-pill">Anomaly Detection</span>
+            <span class="skill-pill">Python (ML)</span>
+            <span class="skill-pill">Supervised Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CYBERSECURITY -->
+    <div class="skills-panel" data-tab="cyber">
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">🔴</div>
+          <div class="skill-group-title">Red Team / Offensive Security</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">Penetration Testing</span><span class="skill-pill">CRTP (in progress)</span>
+            <span class="skill-pill">Active Directory</span><span class="skill-pill">OWASP</span>
+            <span class="skill-pill">Vulnerability Assessment</span><span class="skill-pill">SAST / DAST</span>
+            <span class="skill-pill">Threat Modeling</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-icon">🔵</div>
+          <div class="skill-group-title">Blue Team / Defensive Security</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">SIEM (Wazuh, Elastic)</span><span class="skill-pill">Incident Response</span>
+            <span class="skill-pill">Threat Intelligence</span><span class="skill-pill">SOAR (Shuffle)</span>
+            <span class="skill-pill">SOC L2/L3</span><span class="skill-pill">Security Onion</span>
+            <span class="skill-pill">pfSense</span><span class="skill-pill">Fortinet</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-icon">🟡</div>
+          <div class="skill-group-title">Audit & Compliance</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">ISO/IEC 27001</span><span class="skill-pill">Secure Architecture</span>
+            <span class="skill-pill">Cryptography</span><span class="skill-pill">Risk Assessment</span>
+            <span class="skill-pill">Network Security</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMBEDDED -->
+    <div class="skills-panel" data-tab="embedded">
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">🔌</div>
+          <div class="skill-group-title">Microcontrollers & Hardware</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">ATmega328P</span><span class="skill-pill">Raspberry Pi</span>
+            <span class="skill-pill">C / C++</span><span class="skill-pill">Atmel Studio</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-icon">📡</div>
+          <div class="skill-group-title">Communication Protocols</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">UART</span><span class="skill-pill">GSM</span>
+            <span class="skill-pill">XBee</span><span class="skill-pill">MQTT / TLS</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-icon">🛡️</div>
+          <div class="skill-group-title">IoT Security</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">OWASP IoT Top 10</span><span class="skill-pill">TLS Hardening</span>
+            <span class="skill-pill">Certificate Auth</span><span class="skill-pill">Firmware Security</span>
+            <span class="skill-pill">Network Hardening</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI -->
+    <div class="skills-panel" data-tab="ai">
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon">🤖</div>
+          <div class="skill-group-title">Machine Learning</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">Supervised Learning</span><span class="skill-pill">Unsupervised Learning</span>
+            <span class="skill-pill">Anomaly Detection</span><span class="skill-pill">Python (scikit-learn)</span>
+            <span class="skill-pill">ML Specialization (Coursera)</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-icon">🔒</div>
+          <div class="skill-group-title">AI in Cybersecurity</div>
+          <div class="skills-wrap">
+            <span class="skill-pill">AI-driven Threat Detection</span>
+            <span class="skill-pill">Log Analysis Automation</span>
+            <span class="skill-pill">Behavioral Analytics</span>
+            <span class="skill-pill">SIEM Rule Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ EXPERIENCE ═══════ -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="exp_eyebrow">Career path</div>
+    <h2 class="section-title reveal" data-i18n="exp_title">Professional <span>Experience</span></h2>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot">🛡️</div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-role" data-i18n="exp1_role">Technical Consultant</div>
+              <div class="tl-company" data-i18n="exp1_co">Naxxum Africa</div>
+            </div>
+            <div class="tl-date" data-i18n="exp1_date">Nov 2025 – Present</div>
+          </div>
+          <ul class="tl-list">
+            <li data-i18n="exp1_b1">Integration and deployment of software solutions in international client infrastructures.</li>
+            <li data-i18n="exp1_b2">Pre-integration technical, functional, and security guidance for clients.</li>
+            <li data-i18n="exp1_b3">Post-deployment support: diagnostics, incident analysis, and resolution.</li>
+            <li data-i18n="exp1_b4">Coordination with software vendors on security and vulnerability management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-1">
+        <div class="tl-dot">🔍</div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-role" data-i18n="exp2_role">Cybersecurity Analyst</div>
+              <div class="tl-company" data-i18n="exp2_co">Keystone Group</div>
+            </div>
+            <div class="tl-date" data-i18n="exp2_date">Feb 2025 – Nov 2025</div>
+          </div>
+          <ul class="tl-list">
+            <li data-i18n="exp2_b1">Integrated security intelligence into client platforms to enhance detection capabilities.</li>
+            <li data-i18n="exp2_b2">Participated in Red Team penetration testing missions to improve SIEM detection rules.</li>
+            <li data-i18n="exp2_b3">Deployed and configured enterprise security solutions across client environments.</li>
+            <li data-i18n="exp2_b4">Communicated incident status and security recommendations to clients.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-2">
+        <div class="tl-dot">📊</div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-role" data-i18n="exp3_role">SOC Analyst - Level 2</div>
+              <div class="tl-company" data-i18n="exp3_co">Keystone Group</div>
+            </div>
+            <div class="tl-date" data-i18n="exp3_date">Feb 2024 – Jan 2025</div>
+          </div>
+          <ul class="tl-list">
+            <li data-i18n="exp3_b1">Managed Level 2/3 security incidents via SIEM: identification, analysis, and remediation.</li>
+            <li data-i18n="exp3_b2">Analyzed suspicious files, web content, and emails to detect malicious behavior.</li>
+            <li data-i18n="exp3_b3">Categorized cyberattacks and contributed to threat containment including phishing campaigns.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ EDUCATION ═══════ -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="edu_eyebrow">Academic background</div>
+    <h2 class="section-title reveal" data-i18n="edu_title"><span>Education</span></h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-deg" data-i18n="edu1_deg">Professional Master's Degree</div>
+        <div class="edu-field" data-i18n="edu1_field">Information Systems and Infrastructure Security</div>
+        <div class="edu-school" data-i18n="edu1_school">Higher Institute of Computer Science of El Manar</div>
+        <div class="edu-date" data-i18n="edu1_date">Sep 2023 – Jul 2025 · Ariana, Tunisia</div>
+        <div class="edu-desc" data-i18n="edu1_desc">Advanced studies in cybersecurity, network security, secure architectures, penetration testing, and digital forensics. Final project: Cyber Range Laboratory Creation Module.</div>
+      </div>
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-deg" data-i18n="edu2_deg">Bachelor's Degree</div>
+        <div class="edu-field" data-i18n="edu2_field">Electronics, Electrotechnics & Automation - Embedded Systems</div>
+        <div class="edu-school" data-i18n="edu2_school">Higher Institute of Computer Science of El Manar</div>
+        <div class="edu-date" data-i18n="edu2_date">Sep 2020 – Jun 2023 · Ariana, Tunisia</div>
+        <div class="edu-desc" data-i18n="edu2_desc">Deep focus on embedded systems, microcontrollers, communication protocols, IoT development, and real-time systems. Final project: ATmega328P-based IoT irrigation node.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ PROJECTS ═══════ -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="proj_eyebrow">What I've built</div>
+    <h2 class="section-title reveal" data-i18n="proj_title"><span>Projects</span></h2>
+
+    <div class="projects-tabs reveal">
+      <button class="proj-tab active" data-tab="all"      data-i18n="proj_tab_all">All</button>
+      <button class="proj-tab"        data-tab="cyber"    data-i18n="proj_tab_cyber">Cybersecurity</button>
+      <button class="proj-tab"        data-tab="embedded" data-i18n="proj_tab_embedded">Embedded</button>
+      <button class="proj-tab"        data-tab="ai"       data-i18n="proj_tab_ai">AI</button>
+    </div>
+
+    <!-- ALL PROJECTS -->
+    <div class="proj-panel active" data-tab="all">
+      <div class="project-card reveal">
+        <div class="proj-icon">🏗️</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Cyber Range Laboratory — Creation Module</div>
+        <div class="proj-desc">Designed and developed a lab deployment module for a cyber-range platform enabling automated provisioning of pre-configured VMs. Integrated a realistic Active Directory environment for immersive cybersecurity training. Embedded SAST/DAST in the development lifecycle.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Node.js</span><span class="proj-tag">Django</span>
+          <span class="proj-tag">Ansible</span><span class="proj-tag">Active Directory</span>
+          <span class="proj-tag">VMware</span><span class="proj-tag">Apache Guacamole</span>
+          <span class="proj-tag">SAST/DAST</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-icon">🏠</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Home SOC Lab — Full Stack Security Infrastructure</div>
+        <div class="proj-desc">Built a complete home Security Operations Center: VMware for virtualization, pfSense for network perimeter defense, Elastic SIEM for log management and detection, Wazuh for endpoint monitoring, and Shuffle SOAR for automated incident response orchestration.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">pfSense</span><span class="proj-tag">Elastic SIEM</span>
+          <span class="proj-tag">Wazuh</span><span class="proj-tag">Shuffle SOAR</span>
+          <span class="proj-tag">VMware</span><span class="proj-tag">Security Onion</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="proj-icon">🏥</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Medical IoT Gateway — Security Hardening</div>
+        <div class="proj-desc">Deployed a Raspberry Pi as a medical IoT gateway simulating hospital sensor communication over MQTT. Conducted a full OWASP IoT Top 10 security assessment including attack surface mapping, port enumeration, and MQTT interception. Implemented TLS-enforced MQTT, certificate auth, firewall policies, and SSH key-only access.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Raspberry Pi</span><span class="proj-tag">MQTT / TLS</span>
+          <span class="proj-tag">OWASP IoT Top 10</span><span class="proj-tag">Penetration Testing</span>
+          <span class="proj-tag">Network Hardening</span><span class="proj-tag">Threat Modeling</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="proj-icon">🌱</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">IoT Irrigation Node — ATmega328P</div>
+        <div class="proj-desc">Designed and implemented an embedded IoT node for remote irrigation management. Developed a custom UART driver in C++ for the ATmega328P enabling a second communication interface to support a GSM module. Integrated XBee for wireless long-range communication with full hardware-software validation.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">C++</span><span class="proj-tag">ATmega328P</span>
+          <span class="proj-tag">UART</span><span class="proj-tag">GSM</span>
+          <span class="proj-tag">XBee</span><span class="proj-tag">Atmel Studio</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CYBER PROJECTS -->
+    <div class="proj-panel" data-tab="cyber">
+      <div class="project-card reveal">
+        <div class="proj-icon">🏗️</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Cyber Range Laboratory — Creation Module</div>
+        <div class="proj-desc">Automated lab deployment with Active Directory integration for cybersecurity training. Full SAST/DAST in CI/CD pipeline.</div>
+        <div class="proj-tags"><span class="proj-tag">Ansible</span><span class="proj-tag">Active Directory</span><span class="proj-tag">VMware</span><span class="proj-tag">SAST/DAST</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-icon">🏠</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Home SOC Lab — Full Stack</div>
+        <div class="proj-desc">Complete SOC environment with pfSense, Elastic SIEM, Wazuh monitoring, and Shuffle SOAR for automated response.</div>
+        <div class="proj-tags"><span class="proj-tag">pfSense</span><span class="proj-tag">Elastic SIEM</span><span class="proj-tag">Wazuh</span><span class="proj-tag">Shuffle SOAR</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="proj-icon">🏥</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Medical IoT Gateway — Security Hardening</div>
+        <div class="proj-desc">OWASP IoT Top 10 assessment + full hardening of a hospital MQTT gateway on Raspberry Pi.</div>
+        <div class="proj-tags"><span class="proj-tag">MQTT/TLS</span><span class="proj-tag">OWASP IoT</span><span class="proj-tag">Pen Testing</span></div>
+      </div>
+    </div>
+
+    <!-- EMBEDDED PROJECTS -->
+    <div class="proj-panel" data-tab="embedded">
+      <div class="project-card reveal">
+        <div class="proj-icon">🌱</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">IoT Irrigation Node — ATmega328P</div>
+        <div class="proj-desc">Embedded IoT node with custom C++ UART driver, GSM and XBee wireless integration for remote irrigation management.</div>
+        <div class="proj-tags"><span class="proj-tag">C++</span><span class="proj-tag">ATmega328P</span><span class="proj-tag">UART</span><span class="proj-tag">GSM</span><span class="proj-tag">XBee</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-icon">🏥</div>
+        <div class="proj-status done">Completed</div>
+        <div class="proj-title">Medical IoT Gateway — Raspberry Pi</div>
+        <div class="proj-desc">Raspberry Pi MQTT-based medical sensor gateway with TLS hardening, certificate-based auth, and firewall policies.</div>
+        <div class="proj-tags"><span class="proj-tag">Raspberry Pi</span><span class="proj-tag">MQTT</span><span class="proj-tag">TLS</span><span class="proj-tag">IoT Security</span></div>
+      </div>
+    </div>
+
+    <!-- AI PROJECTS -->
+    <div class="proj-panel" data-tab="ai">
+      <div class="project-card reveal" style="grid-column: 1 / -1; max-width: 480px;">
+        <div class="proj-icon">🤖</div>
+        <div class="proj-status wip">In Progress</div>
+        <div class="proj-title">AI-Enhanced SIEM Detection</div>
+        <div class="proj-desc">Research project exploring the use of machine learning models for automated anomaly detection and SIEM rule generation. Combining security expertise with ML to reduce false positives in SOC environments.</div>
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">scikit-learn</span><span class="proj-tag">Elastic SIEM</span><span class="proj-tag">Anomaly Detection</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ CERTIFICATIONS ═══════ -->
+<section id="certs">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="certs_eyebrow">Credentials</div>
+    <h2 class="section-title reveal" data-i18n="certs_title"><span>Certifications</span></h2>
+
+    <div class="certs-tabs reveal">
+      <button class="cert-tab active" data-tab="all"      data-i18n="cert_tab_all">All</button>
+      <button class="cert-tab"        data-tab="cyber"    data-i18n="cert_tab_cyber">Cybersecurity</button>
+      <button class="cert-tab"        data-tab="embedded" data-i18n="cert_tab_embedded">Embedded</button>
+      <button class="cert-tab"        data-tab="ai"       data-i18n="cert_tab_ai">AI</button>
+    </div>
+
+    <!-- ALL CERTS -->
+    <div class="cert-panel active" data-tab="all">
+      <a class="cert-card reveal" href="assets/pdfs/certs/cnsp.pdf" target="_blank">
+        <div class="cert-icon">🛡️</div>
+        <div class="cert-name">Certified Network Security Practitioner</div>
+        <div class="cert-issuer">SecOps Group</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <a class="cert-card reveal reveal-delay-1" href="assets/pdfs/certs/cap.pdf" target="_blank">
+        <div class="cert-icon">🔐</div>
+        <div class="cert-name">Certified AppSec Practitioner (CAP)</div>
+        <div class="cert-issuer">SecOps Group</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <a class="cert-card reveal reveal-delay-2" href="assets/pdfs/certs/devnet.pdf" target="_blank">
+        <div class="cert-icon">🌐</div>
+        <div class="cert-name">DevNet Associate</div>
+        <div class="cert-issuer">Cisco</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <a class="cert-card reveal reveal-delay-1" href="assets/pdfs/certs/iot_coursera.pdf" target="_blank">
+        <div class="cert-icon">🔌</div>
+        <div class="cert-name">Web Connectivity & Security in Embedded Systems</div>
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <a class="cert-card reveal reveal-delay-2" href="assets/pdfs/certs/ml_coursera.pdf" target="_blank">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-name">Machine Learning Specialization</div>
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <div class="cert-card reveal reveal-delay-3" style="cursor:default;">
+        <div class="cert-icon">⚔️</div>
+        <div class="cert-name">Certified Red Team Professional (CRTP)</div>
+        <div class="cert-issuer">Altered Security</div>
+        <div class="cert-badge progress" data-i18n="cert_progress">In Progress</div>
+      </div>
+    </div>
+
+    <!-- CYBER CERTS -->
+    <div class="cert-panel" data-tab="cyber">
+      <a class="cert-card reveal" href="assets/pdfs/certs/cnsp.pdf" target="_blank">
+        <div class="cert-icon">🛡️</div>
+        <div class="cert-name">Certified Network Security Practitioner</div>
+        <div class="cert-issuer">SecOps Group</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <a class="cert-card reveal reveal-delay-1" href="assets/pdfs/certs/cap.pdf" target="_blank">
+        <div class="cert-icon">🔐</div>
+        <div class="cert-name">Certified AppSec Practitioner (CAP)</div>
+        <div class="cert-issuer">SecOps Group</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <div class="cert-card reveal reveal-delay-2" style="cursor:default;">
+        <div class="cert-icon">⚔️</div>
+        <div class="cert-name">Certified Red Team Professional (CRTP)</div>
+        <div class="cert-issuer">Altered Security</div>
+        <div class="cert-badge progress" data-i18n="cert_progress">In Progress</div>
+      </div>
+    </div>
+
+    <!-- EMBEDDED CERTS -->
+    <div class="cert-panel" data-tab="embedded">
+      <a class="cert-card reveal" href="assets/pdfs/certs/devnet.pdf" target="_blank">
+        <div class="cert-icon">🌐</div>
+        <div class="cert-name">DevNet Associate</div>
+        <div class="cert-issuer">Cisco</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+      <a class="cert-card reveal reveal-delay-1" href="assets/pdfs/certs/iot_coursera.pdf" target="_blank">
+        <div class="cert-icon">🔌</div>
+        <div class="cert-name">Web Connectivity & Security in Embedded Systems</div>
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+    </div>
+
+    <!-- AI CERTS -->
+    <div class="cert-panel" data-tab="ai">
+      <a class="cert-card reveal" href="assets/pdfs/certs/ml_coursera.pdf" target="_blank">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-name">Machine Learning Specialization</div>
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-badge earned">✓ Earned</div>
+        <div class="cert-open" data-i18n="cert_open">Open certificate ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ ROADMAP ═══════ -->
+<section id="roadmap">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="roadmap_eyebrow">Where I'm heading</div>
+    <h2 class="section-title reveal" data-i18n="roadmap_title">Learning <span>Roadmap</span></h2>
+    <div class="roadmap-grid">
+      <div class="roadmap-card reveal">
+        <div class="roadmap-phase" data-i18n="rm1_phase">Now</div>
+        <div class="roadmap-title" data-i18n="rm1_title">Active Objectives</div>
+        <ul class="roadmap-items">
+          <li class="done">CNSP — Certified Network Security Practitioner</li>
+          <li class="done">CAP — Certified AppSec Practitioner</li>
+          <li class="done">DevNet Associate (Cisco)</li>
+          <li>CRTP — Certified Red Team Professional</li>
+          <li>Advanced Active Directory exploitation</li>
+        </ul>
+      </div>
+      <div class="roadmap-card reveal reveal-delay-1">
+        <div class="roadmap-phase" data-i18n="rm2_phase">Q3 2026</div>
+        <div class="roadmap-title" data-i18n="rm2_title">Next Milestones</div>
+        <ul class="roadmap-items">
+          <li>OSCP — Offensive Security Certified Professional</li>
+          <li>CRTE — Certified Red Team Expert</li>
+          <li>Cloud Security (AWS/Azure)</li>
+          <li>CTF competitions (HackTheBox, TryHackMe)</li>
+          <li>Publish first security blog articles</li>
+        </ul>
+      </div>
+      <div class="roadmap-card reveal reveal-delay-2">
+        <div class="roadmap-phase" data-i18n="rm3_phase">2027+</div>
+        <div class="roadmap-title" data-i18n="rm3_title">Long-term Goals</div>
+        <ul class="roadmap-items">
+          <li>CISSP — Certified Information Systems Security Professional</li>
+          <li>AI/ML Security Research publication</li>
+          <li>Embedded Systems security tooling</li>
+          <li>International security conference speaker</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ ASSOCIATIONS ═══════ -->
+<section id="associations">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="assoc_eyebrow">Community</div>
+    <h2 class="section-title reveal" data-i18n="assoc_title">Associative <span>Experience</span></h2>
+    <div class="assoc-card reveal">
+      <div class="assoc-head">
+        <div class="assoc-icon">🚀</div>
+        <div>
+          <div class="assoc-org" data-i18n="assoc_org">Enactus ISI</div>
+          <div class="assoc-role" data-i18n="assoc_role">Member · 4 years | VP Finance · 1 year | Brainstorming Lead · 2 years</div>
+        </div>
+      </div>
+      <div class="assoc-desc" data-i18n="assoc_desc">Active member of Enactus ISI for 4 years. Serving as Vice President of Finance and Brainstorming Lead allowed me to develop strong leadership, financial planning, and creative problem-solving skills — complementing my technical expertise with a well-rounded professional profile.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ INTERESTS ═══════ -->
+<section id="interests">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="int_eyebrow">What drives me</div>
+    <h2 class="section-title reveal" data-i18n="int_title"><span>Interests</span></h2>
+    <div class="interests-grid">
+      <div class="interest-card reveal">
+        <div class="int-icon">🔬</div>
+        <div class="int-title">Malware Analysis & Reverse Engineering</div>
+        <div class="int-desc">Deep interest in understanding attack mechanisms at a binary level to build stronger defenses and anticipate future threats.</div>
+      </div>
+      <div class="interest-card reveal reveal-delay-1">
+        <div class="int-icon">☁️</div>
+        <div class="int-title">Cloud & AI Security</div>
+        <div class="int-desc">Passionate about the intersection of AI, cloud computing, and cybersecurity — exploring how AI can enhance threat detection.</div>
+      </div>
+      <div class="interest-card reveal reveal-delay-2">
+        <div class="int-icon">🔩</div>
+        <div class="int-title">Embedded Systems Security</div>
+        <div class="int-desc">Bridging hardware and cybersecurity — securing microcontrollers, IoT devices, and industrial systems against modern threats.</div>
+      </div>
+      <div class="interest-card reveal reveal-delay-1">
+        <div class="int-icon">💡</div>
+        <div class="int-title">Entrepreneurship & Innovation</div>
+        <div class="int-desc">Driven by transformative ideas in tech. 4 years with Enactus fostering innovative and responsible technological initiatives.</div>
+      </div>
+      <div class="interest-card reveal reveal-delay-2">
+        <div class="int-icon">🏁</div>
+        <div class="int-title">CTF & Security Research</div>
+        <div class="int-desc">Regular participant in Capture The Flag competitions to continuously sharpen offensive and defensive skills in real scenarios.</div>
+      </div>
+      <div class="interest-card reveal reveal-delay-3">
+        <div class="int-icon">📡</div>
+        <div class="int-title">Networking & Infrastructure</div>
+        <div class="int-desc">Fascinated by how networks work under the hood — from routing and switching to zero-trust architecture design.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ BLOG ═══════ -->
+<section id="blog">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="blog_eyebrow">Knowledge sharing</div>
+    <h2 class="section-title reveal" data-i18n="blog_title">Blog & <span>Articles</span></h2>
+
+    <div class="blog-coming-soon reveal" style="text-align:center; padding: 50px 0;">
+      <span style="
+        display: inline-block;
+        background-color: #fff3e0; /* very light orange (like screenshot) */
+        color: #f57c00; /* clean orange text */
+        font-family: Arial, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 999px; /* fully rounded like badge */
+        border: 1px solid #ffe0b2; /* soft border */
+        user-select: none;
+        cursor: default;
+      ">
+        Coming Soon
+      </span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" data-i18n="contact_eyebrow">Let's connect</div>
+    <h2 class="section-title reveal" data-i18n="contact_title">Get in <span>Touch</span></h2>
+    <div class="contact-grid">
+      <div>
+        <p class="contact-desc reveal" data-i18n="contact_desc">
+          Whether it's a security project, a collaboration opportunity, or just a conversation about cybersecurity and embedded systems — I'm always happy to connect.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:benomrane.abderrahmen@gmail.com" class="contact-link reveal">
+            <div class="contact-link-icon"><img src="flaticon/mail.svg" alt="Email"/></div>
+            <div style="flex:1">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">benomrane.abderrahmen@gmail.com</div>
+            </div>
+            <button class="copy-btn" data-copy="benomrane.abderrahmen@gmail.com" data-i18n="copy">Copy</button>
+          </a>
+          <a href="https://linkedin.com/in/abderrahmen-ben-omrane" target="_blank" class="contact-link reveal reveal-delay-1">
+            <div class="contact-link-icon"><img src="flaticon/linkedin.png" alt="LinkedIn"/></div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-val">/abderrahmen-ben-omrane</div>
+            </div>
+          </a>
+          <a href="https://github.com/YOUR_HANDLE" target="_blank" class="contact-link reveal reveal-delay-2">
+            <div class="contact-link-icon"><img src="flaticon/github.svg" alt="GitHub"/></div>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-val">github.com/YOUR_HANDLE</div>
+            </div>
+          </a>
+          <a href="tel:+21699886611" class="contact-link reveal reveal-delay-3">
+            <div class="contact-link-icon"><img src="flaticon/phone.svg" alt="Phone"/></div>
+            <div style="flex:1">
+              <div class="contact-link-label" data-i18n="contact_phone">Phone</div>
+              <div class="contact-link-val">+216 99 886 611</div>
+            </div>
+            <button class="copy-btn" data-copy="+21699886611" data-i18n="copy">Copy</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal reveal-delay-1">
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_name">Name</label>
+          <input type="text" class="form-input" data-i18n-placeholder="form_name" placeholder="Your name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_email">Email</label>
+          <input type="email" class="form-input" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="form_msg">Message</label>
+          <textarea class="form-textarea" placeholder="Your message..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;"
+          onclick="window.location='mailto:benomrane.abderrahmen@gmail.com?subject=Portfolio Contact'"
+          data-i18n="form_send">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-copy">© 2025 <span>Abderrahmen Ben Omrane</span>. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="backTop" title="Back to top">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
